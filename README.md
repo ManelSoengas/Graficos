@@ -94,4 +94,25 @@ plt.legend()
 # Mostrar el gráfico
 plt.show()
 ```
+```
+#Gráfico de dispersión
+# Configurar el tamaño del gráfico
+plt.figure(figsize=(10, 6))
+
+# Representar el dataframe 1 como gráfico de dispersión
+plt.scatter(df1.index, df1['Numeros'], label='Dataframe 1')
+
+# Representar el dataframe 2 como gráfico de dispersión
+plt.scatter(df2.index, df2['Numeros'], label='Dataframe 2')
+
+# Configurar las leyendas y etiquetas
+plt.xlabel('Índice')
+plt.ylabel('Números')
+plt.title('Gráfico de Dispersión')
+plt.legend()
+
+# Mostrar el gráfico
+plt.show()
+```
+![Texto alternativo](https://github.com/ManelSoengas/Graficos/blob/main/Captura_1.PNG)
 
