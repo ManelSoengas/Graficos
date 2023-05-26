@@ -25,3 +25,27 @@ print(df1)
 print("\nDataframe 2:")
 print(df2)
 ```
+Una vez tenemos un conjunto de datos de muestra, pasamos a representarlos 
+de manera gráfica y bajo diferentes formatos de representación.
+```
+# Gráfico de barras
+import matplotlib.pyplot as plt
+# Configurar el tamaño del gráfico
+plt.figure(figsize=(10, 6))
+
+# Representar el dataframe 1
+plt.bar(df1.index, df1['Numeros'], label='Dataframe 1')
+
+# Representar el dataframe 2
+plt.bar(df2.index, df2['Numeros'], label='Dataframe 2')
+
+# Configurar las leyendas y etiquetas
+plt.xlabel('Índice')
+plt.ylabel('Números')
+plt.title('Gráfico de barras')
+plt.legend()
+
+# Mostrar el gráfico
+plt.show()
+```
+
