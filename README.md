@@ -136,4 +136,26 @@ plt.legend()
 # Mostrar el gráfico
 plt.show()
 ```
+```
+# Nube de palabras
+import matplotlib.pyplot as plt
+from wordcloud import WordCloud
+
+# Texto en español
+texto = """El hotel del centro es el más antiguo del pueblo y también es aquel que tiene más comodidades. 
+Este hotel fue construido en 1911, pero primero se utilizó como casa de familia. 
+En 1975 un inversionista compró esta propiedad y la reformó para transformarla en el hotel que hoy conocemos. 
+Es un hotel pequeño, pero cuenta con servicio a la habitación, con pileta climatizada, con un restaurante de categoría, entre otras cosas."""
+
+#Fuente: https://www.ejemplos.co/parrafos-cortos/#ixzz82q1yEp2V."
+
+# Configurar la nube de palabras
+wordcloud = WordCloud(width=800, height=400, background_color='white').generate(texto)
+
+# Mostrar la nube de palabras
+plt.figure(figsize=(10, 6))
+plt.imshow(wordcloud, interpolation='bilinear')
+plt.axis('off')
+plt.show()
+```
 
