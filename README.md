@@ -1,6 +1,7 @@
 A continuación se presentan algunos gráficos implementados en python. 
 El estudio de los datos es un paso previo en cualquier implementación basada en IA.
 Analizar los datos y representarlos es básico para hacernos una idea del tipo, dsitribusión, organización y tamaño.
+https://colab.research.google.com/drive/16RZWerArXR74FWUEdxAHpsUD21jq_Uy_?usp=sharing
 ```
 # Graficos
 Simple graphics with Python
@@ -115,4 +116,24 @@ plt.legend()
 plt.show()
 ```
 ![Texto alternativo](https://github.com/ManelSoengas/Graficos/blob/main/Captura_1.PNG)
+```
+# Histograma
+# Configurar el tamaño del gráfico
+plt.figure(figsize=(10, 6))
+
+# Representar el histograma del dataframe 1
+plt.hist(df1['Numeros'], bins='auto', alpha=0.7, label='Dataframe 1')
+
+# Representar el histograma del dataframe 2
+plt.hist(df2['Numeros'], bins='auto', alpha=0.7, label='Dataframe 2')
+
+# Configurar las etiquetas y títulos
+plt.xlabel('Números')
+plt.ylabel('Frecuencia')
+plt.title('Histograma')
+plt.legend()
+
+# Mostrar el gráfico
+plt.show()
+```
 
