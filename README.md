@@ -48,4 +48,4 @@ plt.legend()
 # Mostrar el gráfico
 plt.show()
 ```
-
+![Texto alternativo](https://github.com/ManelSoengas/Graficos/blob/main/Captura.PNG)
